@@ -15,6 +15,10 @@ GPIO.setup(pins, GPIO.OUT)
 
 #for loop where pin = 18 next 17 ,15, 14 
 for pin in pins :
+	GPIO.cleanup()
+
+time.sleep(2)
+for pin in pins :
 	#setting the GPIO to HIGH or 1 or true
 	GPIO.output(pin,  GPIO.HIGH)
 	#wait 0,5 second
