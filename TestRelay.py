@@ -15,7 +15,8 @@ GPIO.setup(pins, GPIO.OUT)
 
 #for loop where pin = 18 next 17 ,15, 14 
 for pin in pins :
-	GPIO.cleanup()
+	GPIO.output(pin,  GPIO.LOW)
+	time.sleep(0.1)
 
 time.sleep(2)
 for pin in pins :
