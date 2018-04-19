@@ -18,11 +18,11 @@ for pin in pins :
 	#setting the GPIO to HIGH or 1 or true
 	GPIO.output(pin,  GPIO.HIGH)
 	#wait 0,5 second
-	time.sleep(0.5)
+	time.sleep(1)
 	#setting the GPIO to LOW or 0 or false
 	GPIO.output(pin,  GPIO.LOW)
 	#wait 0,5 second
-	time.sleep(0.5)
+	time.sleep(1)
 
 	#Checking if the current relay is running and printing it 
 	if not GPIO.input(pin) : 
@@ -34,10 +34,10 @@ for pin in pins :
 # backwards
 for pin in reversed(pins) :
 	GPIO.output(pin,  GPIO.HIGH)
-	time.sleep(0.5)
+	time.sleep(1)
 
 	GPIO.output(pin,  GPIO.LOW)
-	time.sleep(0.5)
+	time.sleep(1)
 
 
 #cleaning all GPIO's 
